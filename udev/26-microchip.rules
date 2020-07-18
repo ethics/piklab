@@ -1,0 +1,10 @@
+#Pickit
+ATTR{idVendor}=="04d8", ATTR{idProduct}=="0032", MODE="0660", GROUP="microchip"
+#Pickit2
+ATTR{idVendor}=="04d8", ATTR{idProduct}=="0033", MODE="0660", GROUP="microchip"
+#Pickit3
+ATTR{idVendor}=="04d8", ATTR{idProduct}=="900a", MODE="0660", GROUP="microchip"
+#ICD2
+ATTR{idVendor}=="04d8", ATTR{idProduct}=="8000", MODE="0660", GROUP="microchip"
+#ICD21
+ATTR{idVendor}=="04d8", ATTR{idProduct}=="8001", MODE="0660", GROUP="microchip"

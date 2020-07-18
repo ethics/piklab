@@ -1,0 +1,22 @@
+<!-- ************************************************************************* -->
+<!-- * Copyright (C) 2012 Nicolas Hadacek <hadacek@kde.org>                  * -->
+<!-- *                                                                       * -->
+<!-- * This program is free software; you can redistribute it and/or modify  * -->
+<!-- * it under the terms of the GNU General Public License as published by  * -->
+<!-- * the Free Software Foundation; either version 2 of the License, or     * -->
+<!-- * (at your option) any later version.                                   * -->
+<!-- *************************************************************************/-->
+<!DOCTYPE piklab>
+
+<type name="pickit3">
+  <device name="18F242"  family="18FXX2_XX8"   erase_algo="0x0000" flags="0x0000" />
+  <device name="18F248"  family="18FXX2_XX8"   erase_algo="0x0000" flags="0x0000" />
+  <device name="18F252"  family="18FXX2_XX8"   erase_algo="0xFD30" flags="0x0000" />
+  <device name="18F258"  family="18FXX2_XX8"   erase_algo="0xFD30" flags="0x0000" />
+  <device name="18F442"  family="18FXX2_XX8"   erase_algo="0x5DA8" flags="0x0000" />
+  <device name="18F448"  family="18FXX2_XX8"   erase_algo="0x5DA8" flags="0x0000" />
+  <device name="18F452"  family="18FXX2_XX8"   erase_algo="0x6676" flags="0x0000" />
+  <device name="18F4520" family="18F2XXX_4XXX" erase_algo="0xB938" flags="0x0000" />
+  <device name="18F458"  family="18FXX2_XX8"   erase_algo="0xF5A0" flags="0x0000" />
+  <device name="18F4580" family="18F2XXX_4XXX" erase_algo="0xB938" flags="0x0000" />
+</type>

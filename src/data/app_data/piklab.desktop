@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Exec=piklab %u
+Icon=piklab
+X-DocPath=piklab/index.html
+Categories=Qt;KDE;Development;IDE;Electronics;
+Comment=Integrated development environment for applications based on PIC microcontrollers.
+Terminal=false
+Name=Piklab
+GenericName=Integrated Development Environment for PICs
+MimeType=application/x-piklab;

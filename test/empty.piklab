@@ -1,0 +1,9 @@
+<!DOCTYPE piklab>
+<piklab>
+  <general>
+    <device>16F871</device>
+    <tool>gputils</tool>
+    <programmer>custom</programmer>
+  </general>
+  <editors/>
+</piklab>

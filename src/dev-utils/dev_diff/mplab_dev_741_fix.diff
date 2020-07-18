@@ -1,0 +1,1510 @@
+diff -ub ../741_vanilla/dsPIC30F6011A.dev ./dsPIC30F6011A.dev
+--- ../741_vanilla/dsPIC30F6011A.dev	2007-04-15 16:45:30.000000000 +0200
++++ ./dsPIC30F6011A.dev	2007-04-15 17:00:28.000000000 +0200
+@@ -913,17 +913,17 @@
+                                # ----------------#
+ 
+ sfr (key=TRISF addr=0x2de size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------1111111' mclr='---------111111')
++    reset (por='---------1111111' mclr='---------1111111')
+     bit (names='- - - - - - - - - TRISF6 TRISF5 TRISF4 TRISF3 TRISF2 TRISF1 TRISF0')
+     bit (tag=scl names='TRISF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=PORTF addr=0x2e0 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------xxxxxx' mclr='---------uuuuuu')
++    reset (por='---------xxxxxxx' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - RF6 RF5 RF4 RF3 RF2 RF1 RF0')
+     bit (tag=scl names='RF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=LATF addr=0x2e2 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------000000' mclr='---------uuuuuu')
++    reset (por='---------0000000' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - LATF6 LATF5 LATF4 LATF3 LATF2 LATF1 LATF0')
+     bit (tag=scl names='LATF' width='16')
+     stimulus (scl=rwb)
+diff -ub ../741_vanilla/dsPIC30F6011.dev ./dsPIC30F6011.dev
+--- ../741_vanilla/dsPIC30F6011.dev	2007-04-15 16:45:30.000000000 +0200
++++ ./dsPIC30F6011.dev	2007-04-15 17:00:02.000000000 +0200
+@@ -909,17 +909,17 @@
+                                # ----------------#
+ 
+ sfr (key=TRISF addr=0x2de size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------1111111' mclr='---------111111')
++    reset (por='---------1111111' mclr='---------1111111')
+     bit (names='- - - - - - - - - TRISF6 TRISF5 TRISF4 TRISF3 TRISF2 TRISF1 TRISF0')
+     bit (tag=scl names='TRISF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=PORTF addr=0x2e0 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------xxxxxx' mclr='---------uuuuuu')
++    reset (por='---------xxxxxxx' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - RF6 RF5 RF4 RF3 RF2 RF1 RF0')
+     bit (tag=scl names='RF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=LATF addr=0x2e2 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------000000' mclr='---------uuuuuu')
++    reset (por='---------0000000' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - LATF6 LATF5 LATF4 LATF3 LATF2 LATF1 LATF0')
+     bit (tag=scl names='LATF' width='16')
+     stimulus (scl=rwb)
+diff -ub ../741_vanilla/dsPIC30F6012A.dev ./dsPIC30F6012A.dev
+--- ../741_vanilla/dsPIC30F6012A.dev	2007-04-15 16:45:30.000000000 +0200
++++ ./dsPIC30F6012A.dev	2007-04-15 17:00:50.000000000 +0200
+@@ -971,17 +971,17 @@
+                                # ----------------#
+ 
+ sfr (key=TRISF addr=0x2de size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------1111111' mclr='---------111111')
++    reset (por='---------1111111' mclr='---------1111111')
+     bit (names='- - - - - - - - - TRISF6 TRISF5 TRISF4 TRISF3 TRISF2 TRISF1 TRISF0')
+     bit (tag=scl names='TRISF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=PORTF addr=0x2e0 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------xxxxxx' mclr='---------uuuuuu')
++    reset (por='---------xxxxxxx' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - RF6 RF5 RF4 RF3 RF2 RF1 RF0')
+     bit (tag=scl names='RF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=LATF addr=0x2e2 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------000000' mclr='---------uuuuuu')
++    reset (por='---------0000000' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - LATF6 LATF5 LATF4 LATF3 LATF2 LATF1 LATF0')
+     bit (tag=scl names='LATF' width='16')
+     stimulus (scl=rwb)
+diff -ub ../741_vanilla/dsPIC30F6012.dev ./dsPIC30F6012.dev
+--- ../741_vanilla/dsPIC30F6012.dev	2007-04-15 16:45:30.000000000 +0200
++++ ./dsPIC30F6012.dev	2007-04-15 17:01:08.000000000 +0200
+@@ -966,17 +966,17 @@
+                                # ----------------#
+ 
+ sfr (key=TRISF addr=0x2de size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------1111111' mclr='---------111111')
++    reset (por='---------1111111' mclr='---------1111111')
+     bit (names='- - - - - - - - - TRISF6 TRISF5 TRISF4 TRISF3 TRISF2 TRISF1 TRISF0')
+     bit (tag=scl names='TRISF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=PORTF addr=0x2e0 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------xxxxxx' mclr='---------uuuuuu')
++    reset (por='---------xxxxxxx' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - RF6 RF5 RF4 RF3 RF2 RF1 RF0')
+     bit (tag=scl names='RF' width='16')
+     stimulus (scl=rwb)
+ sfr (key=LATF addr=0x2e2 size=2 access='u u u u u u u u u rw rw rw rw rw rw rw')
+-    reset (por='---------000000' mclr='---------uuuuuu')
++    reset (por='---------0000000' mclr='---------uuuuuuu')
+     bit (names='- - - - - - - - - LATF6 LATF5 LATF4 LATF3 LATF2 LATF1 LATF0')
+     bit (tag=scl names='LATF' width='16')
+     stimulus (scl=rwb)
+diff -ub ../741_vanilla/PIC12F510.dev ./PIC12F510.dev
+--- ../741_vanilla/PIC12F510.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC12F510.dev	2007-04-15 17:02:10.000000000 +0200
+@@ -45,7 +45,7 @@
+     bit (names='FSR' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=OSCCAL addr=0x5 size=1 access='rw rw rw rw rw rw rw u')
+-    reset (por='1111111-' mclr='1111111=')
++    reset (por='1111111-' mclr='1111111-')
+     bit (names='CAL -' width='7 1')
+ sfr (key=GPIO addr=0x6 size=1 access='u u rw rw r rw rw rw')
+     reset (por='--xxxxxx' mclr='--uuuuuu')
+@@ -61,7 +61,7 @@
+     bit (tag=scl names='ANS ADCS CHS GO_nDONE ADON' width='2 2 2 1 1')
+     stimulus (scl=rwb regfiles=w)
+ sfr (key=ADRES addr=0x9 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='xxxxxxxxx' mclr='uuuuuuuu')
++    reset (por='xxxxxxxx' mclr='uuuuuuuu')
+     bit (names='ADRES' width='8')
+     stimulus (scl=rwb type=int regfiles=r)
+ 
+diff -ub ../741_vanilla/pic16c745.dev ./pic16c745.dev
+--- ../741_vanilla/pic16c745.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16c745.dev	2007-04-15 17:02:43.000000000 +0200
+@@ -84,7 +84,7 @@
+     bit (names='GIE PEIE TMR0IE INTE RBIE TMR0IF INTF RBIF')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIR1 addr=0xC size=1 access='u rw r r rw rw rw rw')
+-    reset (por='-00000000' mclr='-00000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIF RCIF TXIF USBIF CCP1IF TMR2IF TMR1IF')
+     bit (tag=scl names='- ADIF - - USBIF CCP1IF TMR2IF TMR1IF')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+diff -ub ../741_vanilla/PIC16F506.dev ./PIC16F506.dev
+--- ../741_vanilla/PIC16F506.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC16F506.dev	2007-04-15 20:57:12.000000000 +0200
+@@ -45,7 +45,7 @@
+     bit (names='FSR' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=OSCCAL addr=0x5 size=1 access='rw rw rw rw rw rw rw u')
+-    reset (por='1111111-' mclr='1111111=')
++    reset (por='1111111-' mclr='1111111-')
+     bit (names='CAL -' width='7 1')
+ sfr (key=PORTB addr=0x6 size=1 access='u u rw rw r rw rw rw')
+     reset (por='--xxxxxx' mclr='--uuuuuu')
+@@ -65,7 +65,7 @@
+     bit (tag=scl names='ANS ADCS CHS GO_nDONE ADON' width='2 2 2 1 1')
+     stimulus (scl=rwb regfiles=w)
+ sfr (key=ADRES addr=0xa size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='xxxxxxxxx' mclr='uuuuuuuu')
++    reset (por='xxxxxxxx' mclr='uuuuuuuu')
+     bit (names='ADRES' width='8')
+     stimulus (scl=rwb type=int regfiles=r)
+ sfr (key=CM2CON0 addr=0xb size=1 access='r rw rw rw rw rw rw rw')
+diff -ub ../741_vanilla/pic16f631.dev ./pic16f631.dev
+--- ../741_vanilla/pic16f631.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16f631.dev	2007-04-15 17:06:30.000000000 +0200
+@@ -145,7 +145,7 @@
+     stimulus (scl=rwb regfiles=w)
+ 
+ sfr (key=PIE1 addr=0x8C size=1 access='u rw rw rw rw rw rw rw')
+-    reset (por='-000000' mclr='-0000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIE RCIE TXIE SSPIE CCP1IE TMR2IE TMR1IE')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIE2 addr=0x8D size=1 access='rw rw rw rw u u u u')
+diff -ub ../741_vanilla/pic16f677.dev ./pic16f677.dev
+--- ../741_vanilla/pic16f677.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16f677.dev	2007-04-15 17:06:49.000000000 +0200
+@@ -170,7 +170,7 @@
+     stimulus (scl=rwb regfiles=w)
+ 
+ sfr (key=PIE1 addr=0x8C size=1 access='u rw rw rw rw rw rw rw')
+-    reset (por='-000000' mclr='-0000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIE RCIE TXIE SSPIE CCP1IE TMR2IE TMR1IE')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIE2 addr=0x8D size=1 access='rw rw rw rw u u u u')
+diff -ub ../741_vanilla/pic16f685.dev ./pic16f685.dev
+--- ../741_vanilla/pic16f685.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16f685.dev	2007-04-15 17:07:08.000000000 +0200
+@@ -216,7 +216,7 @@
+     stimulus (scl=rwb regfiles=w)
+ 
+ sfr (key=PIE1 addr=0x8C size=1 access='u rw rw rw rw rw rw rw')
+-    reset (por='-000000' mclr='-0000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIE RCIE TXIE SSPIE CCP1IE TMR2IE TMR1IE')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIE2 addr=0x8D size=1 access='rw rw rw rw u u u u')
+diff -ub ../741_vanilla/pic16f687.dev ./pic16f687.dev
+--- ../741_vanilla/pic16f687.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16f687.dev	2007-04-15 17:07:21.000000000 +0200
+@@ -218,7 +218,7 @@
+     stimulus (scl=rwb regfiles=w)
+ 
+ sfr (key=PIE1 addr=0x8C size=1 access='u rw rw rw rw rw rw rw')
+-    reset (por='-000000' mclr='-0000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIE RCIE TXIE SSPIE CCP1IE TMR2IE TMR1IE')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIE2 addr=0x8D size=1 access='rw rw rw rw u u u u')
+diff -ub ../741_vanilla/pic16f689.dev ./pic16f689.dev
+--- ../741_vanilla/pic16f689.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16f689.dev	2007-04-15 17:07:40.000000000 +0200
+@@ -216,7 +216,7 @@
+     stimulus (scl=rwb regfiles=w)
+ 
+ sfr (key=PIE1 addr=0x8C size=1 access='u rw rw rw rw rw rw rw')
+-    reset (por='-000000' mclr='-0000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIE RCIE TXIE SSPIE CCP1IE TMR2IE TMR1IE')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIE2 addr=0x8D size=1 access='rw rw rw rw u u u u')
+diff -ub ../741_vanilla/pic16f690.dev ./pic16f690.dev
+--- ../741_vanilla/pic16f690.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic16f690.dev	2007-04-15 17:28:39.000000000 +0200
+@@ -214,7 +214,7 @@
+     stimulus (scl=rwb regfiles=w)
+ 
+ sfr (key=PIE1 addr=0x8C size=1 access='u rw rw rw rw rw rw rw')
+-    reset (por='-000000' mclr='-0000000')
++    reset (por='-0000000' mclr='-0000000')
+     bit (names='- ADIE RCIE TXIE SSPIE CCP1IE TMR2IE TMR1IE')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=PIE2 addr=0x8D size=1 access='rw rw rw rw u u u u')
+diff -ub ../741_vanilla/pic18c658.dev ./pic18c658.dev
+--- ../741_vanilla/pic18c658.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18c658.dev	2007-04-15 17:29:17.000000000 +0200
+@@ -983,7 +983,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='u r r r rw u rw rw')
+-    reset (por='-00000-00' mclr='-0000-00')
++    reset (por='-0000-00' mclr='-0000-00')
+     bit (names='- TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=RXM1EIDL addr=0xF1F size=1 access='rw rw rw rw rw rw rw rw')
+diff -ub ../741_vanilla/pic18c858.dev ./pic18c858.dev
+--- ../741_vanilla/pic18c858.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18c858.dev	2007-04-15 17:29:31.000000000 +0200
+@@ -1039,7 +1039,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='u r r r rw u rw rw')
+-    reset (por='-00000-00' mclr='-0000-00')
++    reset (por='-0000-00' mclr='-0000-00')
+     bit (names='- TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ sfr (key=RXM1EIDL addr=0xF1F size=1 access='rw rw rw rw rw rw rw rw')
+diff -ub ../741_vanilla/PIC18F1230.dev ./PIC18F1230.dev
+--- ../741_vanilla/PIC18F1230.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F1230.dev	2007-04-15 21:01:55.000000000 +0200
+@@ -265,12 +265,12 @@
+     reset (por='---1----' mclr='---1----')
+     bit (names='- - - PTIP - - - -')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+-sfr (key=PIR3 addr=0xFA4 size=1 access='rw u u rw u rw rw u')
++sfr (key=PIR3 addr=0xFA4 size=1 access='u u u rw u u u u')
+    reset (por='---0----' mclr='---0----')
+    bit (names='- - - PTIE - - - -')
+    stimulus (scl=rwb regfiles=w pcfiles=rw)
+    
+-sfr (key=PIE3 addr=0xFA3 size=1 access='rw u u rw u rw rw u')
++sfr (key=PIE3 addr=0xFA3 size=1 access='u u u rw u u u u')
+    reset (por='---0----' mclr='---0----')
+    bit (names='- - - PTIF - - - -')
+    stimulus (scl=rwb regfiles=w pcfiles=rw)
+diff -ub ../741_vanilla/PIC18F1330.dev ./PIC18F1330.dev
+--- ../741_vanilla/PIC18F1330.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F1330.dev	2007-04-15 21:32:43.000000000 +0200
+@@ -264,12 +264,12 @@
+     reset (por='---1----' mclr='---1----')
+     bit (names='- - - PTIP - - - -')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+-sfr (key=PIR3 addr=0xFA4 size=1 access='rw u u rw u rw rw u')
++sfr (key=PIR3 addr=0xFA4 size=1 access='u u u rw u u u u')
+    reset (por='---0----' mclr='---0----')
+    bit (names='- - - PTIE - - - -')
+    stimulus (scl=rwb regfiles=w pcfiles=rw)
+    
+-sfr (key=PIE3 addr=0xFA3 size=1 access='rw u u rw u rw rw u')
++sfr (key=PIE3 addr=0xFA3 size=1 access='u u u rw u u u u')
+    reset (por='---0----' mclr='---0----')
+    bit (names='- - - PTIF - - - -')
+    stimulus (scl=rwb regfiles=w pcfiles=rw)
+diff -ub ../741_vanilla/PIC18F2480.dev ./PIC18F2480.dev
+--- ../741_vanilla/PIC18F2480.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F2480.dev	2007-04-15 21:33:16.000000000 +0200
+@@ -814,7 +814,7 @@
+     bit (names='SID10 SID9 SID8 SID7 SID6 SID5 SID4 SID3')
+ 
+ sfr (key=TXB0CON addr=0xF40 size=1 access='rw rw rw rw rw u rw rw')
+-    rset (por='xxxxx-xx' mclr'uuuuu-uu')
++    reset (por='xxxxx-xx' mclr='uuuuu-uu')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXBRI' width='1 1 1 1 1 1 2')
+ 
+ # There is yet another shadow of CANCON and CANSTAT here at addresses
+diff -ub ../741_vanilla/PIC18F2580.dev ./PIC18F2580.dev
+--- ../741_vanilla/PIC18F2580.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F2580.dev	2007-04-15 21:33:34.000000000 +0200
+@@ -814,7 +814,7 @@
+     bit (names='SID10 SID9 SID8 SID7 SID6 SID5 SID4 SID3')
+ 
+ sfr (key=TXB0CON addr=0xF40 size=1 access='rw rw rw rw rw u rw rw')
+-    rset (por='xxxxx-xx' mclr'uuuuu-uu')
++    reset (por='xxxxx-xx' mclr='uuuuu-uu')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXBRI' width='1 1 1 1 1 1 2')
+ 
+ # There is yet another shadow of CANCON and CANSTAT here at addresses
+diff -ub ../741_vanilla/PIC18F2585.dev ./PIC18F2585.dev
+--- ../741_vanilla/PIC18F2585.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F2585.dev	2007-04-15 21:02:48.000000000 +0200
+@@ -975,7 +975,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f2680.dev ./pic18f2680.dev
+--- ../741_vanilla/pic18f2680.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f2680.dev	2007-04-15 21:09:23.000000000 +0200
+@@ -974,7 +974,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f2682.dev ./pic18f2682.dev
+--- ../741_vanilla/pic18f2682.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f2682.dev	2007-04-15 21:09:54.000000000 +0200
+@@ -972,7 +972,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f2685.dev ./pic18f2685.dev
+--- ../741_vanilla/pic18f2685.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f2685.dev	2007-04-15 21:10:13.000000000 +0200
+@@ -972,7 +972,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/PIC18F4480.dev ./PIC18F4480.dev
+--- ../741_vanilla/PIC18F4480.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F4480.dev	2007-04-15 21:33:56.000000000 +0200
+@@ -814,7 +814,7 @@
+     bit (names='SID10 SID9 SID8 SID7 SID6 SID5 SID4 SID3')
+ 
+ sfr (key=TXB0CON addr=0xF40 size=1 access='rw rw rw rw rw u rw rw')
+-    rset (por='xxxxx-xx' mclr'uuuuu-uu')
++    reset (por='xxxxx-xx' mclr='uuuuu-uu')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXBRI' width='1 1 1 1 1 1 2')
+ 
+ # There is yet another shadow of CANCON and CANSTAT here at addresses
+diff -ub ../741_vanilla/PIC18F4580.dev ./PIC18F4580.dev
+--- ../741_vanilla/PIC18F4580.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F4580.dev	2007-04-15 21:34:16.000000000 +0200
+@@ -819,7 +819,7 @@
+     bit (names='SID10 SID9 SID8 SID7 SID6 SID5 SID4 SID3')
+ 
+ sfr (key=TXB0CON addr=0xF40 size=1 access='rw rw rw rw rw u rw rw')
+-    rset (por='xxxxx-xx' mclr'uuuuu-uu')
++    reset (por='xxxxx-xx' mclr='uuuuu-uu')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXBRI' width='1 1 1 1 1 1 2')
+ 
+ # There is yet another shadow of CANCON and CANSTAT here at addresses
+diff -ub ../741_vanilla/PIC18F4585.dev ./PIC18F4585.dev
+--- ../741_vanilla/PIC18F4585.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F4585.dev	2007-04-15 21:28:57.000000000 +0200
+@@ -610,7 +610,7 @@
+ sfr (key=CMCON addr=0xFB4 size=1 access='r r rw rw rw rw rw rw')
+ # There is only one reference to reset values in DOS-00451a, but they are not 
+ # the same as those for the 8680 parts.  They could be wrong. (7-17-03)
+-    reset (por='0000111' mclr='00000111')
++    reset (por='00000111' mclr='00000111')
+     bit (names='C2OUT C1OUT C2INV C1INV CIS CM' width='1 1 1 1 1 3')
+     stimulus (scl=rwb regfiles=w)
+ 
+@@ -1041,7 +1041,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f4680.dev ./pic18f4680.dev
+--- ../741_vanilla/pic18f4680.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f4680.dev	2007-04-15 21:29:30.000000000 +0200
+@@ -610,7 +610,7 @@
+ sfr (key=CMCON addr=0xFB4 size=1 access='r r rw rw rw rw rw rw')
+ # There is only one reference to reset values in DOS-00451a, but they are not 
+ # the same as those for the 8680 parts.  They could be wrong. (7-17-03)
+-    reset (por='0000111' mclr='00000111')
++    reset (por='00000111' mclr='00000111')
+     bit (names='C2OUT C1OUT C2INV C1INV CIS CM' width='1 1 1 1 1 3')
+     stimulus (scl=rwb regfiles=w)
+ 
+@@ -1041,7 +1041,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f4682.dev ./pic18f4682.dev
+--- ../741_vanilla/pic18f4682.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f4682.dev	2007-04-15 21:29:55.000000000 +0200
+@@ -607,7 +607,7 @@
+ sfr (key=CMCON addr=0xFB4 size=1 access='r r rw rw rw rw rw rw')
+ # There is only one reference to reset values in DOS-00451a, but they are not 
+ # the same as those for the 8680 parts.  They could be wrong. (7-17-03)
+-    reset (por='0000000' mclr='00000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='C2OUT C1OUT C2INV C1INV CIS CM' width='1 1 1 1 1 3')
+     stimulus (scl=rwb regfiles=w)
+ 
+@@ -1038,7 +1038,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f4685.dev ./pic18f4685.dev
+--- ../741_vanilla/pic18f4685.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f4685.dev	2007-04-15 21:30:20.000000000 +0200
+@@ -607,7 +607,7 @@
+ sfr (key=CMCON addr=0xFB4 size=1 access='r r rw rw rw rw rw rw')
+ # There is only one reference to reset values in DOS-00451a, but they are not
+ # the same as those for the 8680 parts.  They could be wrong. (7-17-03)
+-    reset (por='0000000' mclr='00000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='C2OUT C1OUT C2INV C1INV CIS CM' width='1 1 1 1 1 3')
+     stimulus (scl=rwb regfiles=w)
+ 
+@@ -1038,7 +1038,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/pic18f6585.dev ./pic18f6585.dev
+--- ../741_vanilla/pic18f6585.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./pic18f6585.dev	2007-04-15 21:30:41.000000000 +0200
+@@ -1072,7 +1072,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/PIC18F6680.dev ./PIC18F6680.dev
+--- ../741_vanilla/PIC18F6680.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F6680.dev	2007-04-15 21:30:58.000000000 +0200
+@@ -1072,7 +1072,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/PIC18F66J60.dev ./PIC18F66J60.dev
+--- ../741_vanilla/PIC18F66J60.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F66J60.dev	2007-04-17 06:57:37.000000000 +0200
+@@ -852,7 +852,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -860,7 +860,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -868,7 +868,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -876,7 +876,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -884,7 +884,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -892,7 +892,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -900,7 +900,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -908,7 +908,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -916,7 +916,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -924,7 +924,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -940,7 +940,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1036,7 +1036,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F66J65.dev ./PIC18F66J65.dev
+--- ../741_vanilla/PIC18F66J65.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F66J65.dev	2007-04-17 07:00:52.000000000 +0200
+@@ -852,7 +852,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -860,7 +860,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -868,7 +868,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -876,7 +876,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -884,7 +884,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -892,7 +892,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -900,7 +900,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -908,7 +908,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -916,7 +916,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -924,7 +924,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -940,7 +940,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1036,7 +1036,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F67J60.dev ./PIC18F67J60.dev
+--- ../741_vanilla/PIC18F67J60.dev	2007-04-15 16:45:31.000000000 +0200
++++ ./PIC18F67J60.dev	2007-04-17 07:07:13.000000000 +0200
+@@ -851,7 +851,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -859,7 +859,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -867,7 +867,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -875,7 +875,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -883,7 +883,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -891,7 +891,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -899,7 +899,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -907,7 +907,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -915,7 +915,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -923,7 +923,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -939,7 +939,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1035,7 +1035,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/pic18f8585.dev ./pic18f8585.dev
+--- ../741_vanilla/pic18f8585.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./pic18f8585.dev	2007-04-15 21:31:13.000000000 +0200
+@@ -1117,7 +1117,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/PIC18F8680.dev ./PIC18F8680.dev
+--- ../741_vanilla/PIC18F8680.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F8680.dev	2007-04-15 21:31:25.000000000 +0200
+@@ -1116,7 +1116,7 @@
+     bit (names='TXSID' width='8')
+     stimulus (scl=rwb regfiles=w pcfiles=w)
+ sfr (key=TXB2CON addr=0xF20 size=1 access='rc r r r rw u rw rw')
+-    reset (por='000000-00' mclr='00000-00')
++    reset (por='00000-00' mclr='00000-00')
+     bit (names='TXBIF TXABT TXLARB TXERR TXREQ - TXPRI' width='1 1 1 1 1 1 2')
+     stimulus (scl=rwb regfiles=w pcfiles=rw)
+ 
+diff -ub ../741_vanilla/PIC18F86J60.dev ./PIC18F86J60.dev
+--- ../741_vanilla/PIC18F86J60.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F86J60.dev	2007-04-17 07:08:40.000000000 +0200
+@@ -910,7 +910,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -918,7 +918,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -926,7 +926,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -934,7 +934,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -942,7 +942,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -950,7 +950,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -958,7 +958,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -966,7 +966,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -974,7 +974,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -982,7 +982,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -998,7 +998,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1094,7 +1094,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F86J65.dev ./PIC18F86J65.dev
+--- ../741_vanilla/PIC18F86J65.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F86J65.dev	2007-04-17 07:09:52.000000000 +0200
+@@ -910,7 +910,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -918,7 +918,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -926,7 +926,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -934,7 +934,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -942,7 +942,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -950,7 +950,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -958,7 +958,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -966,7 +966,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -974,7 +974,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -982,7 +982,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -998,7 +998,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1094,7 +1094,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F87J60.dev ./PIC18F87J60.dev
+--- ../741_vanilla/PIC18F87J60.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F87J60.dev	2007-04-17 07:24:14.000000000 +0200
+@@ -910,7 +910,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -918,7 +918,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -926,7 +926,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -934,7 +934,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -942,7 +942,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -950,7 +950,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -958,7 +958,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -966,7 +966,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -974,7 +974,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -982,7 +982,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -998,7 +998,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1094,7 +1094,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F96J60.dev ./PIC18F96J60.dev
+--- ../741_vanilla/PIC18F96J60.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F96J60.dev	2007-04-17 07:25:23.000000000 +0200
+@@ -933,7 +933,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -941,7 +941,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -949,7 +949,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -957,7 +957,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -965,7 +965,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -973,7 +973,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -981,7 +981,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -989,7 +989,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -997,7 +997,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -1005,7 +1005,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -1021,7 +1021,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1117,7 +1117,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F96J65.dev ./PIC18F96J65.dev
+--- ../741_vanilla/PIC18F96J65.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F96J65.dev	2007-04-17 07:26:20.000000000 +0200
+@@ -933,7 +933,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -941,7 +941,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -949,7 +949,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -957,7 +957,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -965,7 +965,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -973,7 +973,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -981,7 +981,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -989,7 +989,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -997,7 +997,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -1005,7 +1005,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -1021,7 +1021,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1117,7 +1117,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+diff -ub ../741_vanilla/PIC18F97J60.dev ./PIC18F97J60.dev
+--- ../741_vanilla/PIC18F97J60.dev	2007-04-15 16:45:32.000000000 +0200
++++ ./PIC18F97J60.dev	2007-04-17 07:27:08.000000000 +0200
+@@ -934,7 +934,7 @@
+     bit (names='- - - EDMADSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMADSTL addr=0xEF4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMADSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDH addr=0xEF3 size=1 access='u u u rw rw rw rw rw')
+@@ -942,7 +942,7 @@
+     bit (names='- - - EDMANDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMANDL addr=0xEF2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMANDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTH addr=0xEF1 size=1 access='u u u rw rw rw rw rw')
+@@ -950,7 +950,7 @@
+     bit (names='- - - EDMASTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EDMASTL addr=0xEF0 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EDMASTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTH addr=0xEEF size=1 access='u u u rw rw rw rw rw')
+@@ -958,7 +958,7 @@
+     bit (names='- - - ERXWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXWRPTL addr=0xEEE size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ERXWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTH addr=0xEED size=1 access='u u u rw rw rw rw rw')
+@@ -966,7 +966,7 @@
+     bit (names='- - - ERXRDPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXRDPTL addr=0xEEC size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111110101')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXRDPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDH addr=0xEEB size=1 access='u u u rw rw rw rw rw')
+@@ -974,7 +974,7 @@
+     bit (names='- - - ERXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXNDL addr=0xEEA size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111111' mclr='111111111')
++    reset (por='11111111' mclr='11111111')
+     bit (names='ERXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTH addr=0xEE9 size=1 access='u u u rw rw rw rw rw')
+@@ -982,7 +982,7 @@
+     bit (names='- - - ERXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ERXSTL addr=0xEE8 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='11111010' mclr='111111010')
++    reset (por='11111010' mclr='11111010')
+     bit (names='ERXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDH addr=0xEE7 size=1 access='u u u rw rw rw rw rw')
+@@ -990,7 +990,7 @@
+     bit (names='- - - ETXNDH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXNDL addr=0xEE6 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXNDL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTH addr=0xEE5 size=1 access='u u u rw rw rw rw rw')
+@@ -998,7 +998,7 @@
+     bit (names='- - - ETXSTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=ETXSTL addr=0xEE4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='ETXSTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTH addr=0xEE3 size=1 access='u u u rw rw rw rw rw')
+@@ -1006,7 +1006,7 @@
+     bit (names='- - - EWRPTH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EWRPTL addr=0xEE2 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EWRPTL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPKTCNT addr=0xED9 size=1 access='r r r r r r r r')
+@@ -1022,7 +1022,7 @@
+     bit (names='- - - EPMOH' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=EPMOL addr=0xED4 size=1 access='rw rw rw rw rw rw rw rw')
+-    reset (por='00000000' mclr='000000000')
++    reset (por='00000000' mclr='00000000')
+     bit (names='EPMOL' width='8')
+     stimulus (scl=rwb)
+ sfr (key=EPMCSH addr=0xED1 size=1 access='rw rw rw rw rw rw rw rw')
+@@ -1118,7 +1118,7 @@
+     bit (names='- - - MIREGADR' width='1 1 1 5')
+     stimulus (scl=rwb)
+ sfr (key=MICMD addr=0xEB2 size=1 access='u u u u u u rw rw')
+-    reset (por='------00' mclr='-------00')
++    reset (por='------00' mclr='------00')
+     bit (names='- - - - - - MIISCAN MIIRD' width='1 1 1 1 1 1 1 1')
+     stimulus (scl=rwb)
+ sfr (key=MICON addr=0xEB1 size=1 access='rw u u u u u u u')
+Only in .: registers.xml

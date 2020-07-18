@@ -1,0 +1,63 @@
+<!-- ************************************************************************* -->
+<!-- * Copyright (C) 2010 Nicolas Hadacek <hadacek@kde.org>                  * -->
+<!-- *                                                                       * -->
+<!-- * This program is free software; you can redistribute it and/or modify  * -->
+<!-- * it under the terms of the GNU General Public License as published by  * -->
+<!-- * the Free Software Foundation; either version 2 of the License, or     * -->
+<!-- * (at your option) any later version.                                   * -->
+<!-- *************************************************************************/-->
+<!DOCTYPE piklab>
+
+<type name="op">
+
+  <device name="16F636"   family="12F6XX_16F6XX" />
+  <device name="16F639"   family="12F6XX_16F6XX" />
+  <device name="16F648A"  family="16F62XA" />
+  <device name="16F676"   family="12F675" />
+  <device name="16F684"   family="12F6XX_16F6XX" />
+  <device name="16F685"   family="12F6XX_16F6XX" />
+  <device name="16F687"   family="12F6XX_16F6XX" />
+  <device name="16F688"   family="12F6XX_16F6XX" />
+  <device name="16F689"   family="12F6XX_16F6XX" />
+  <device name="16F690"   family="12F6XX_16F6XX" />
+<!--  <device name="16F716"   family="12C67X" />
+-->
+  <device name="16F73"    family="16F7X" />
+  <device name="16F74"    family="16F7X" />
+  <device name="16F76"    family="16F7X" />
+  <device name="16F77"    family="16F7X" />
+  <device name="16F737"   family="16F7X7" />
+  <device name="16F747"   family="16F7X7" />
+  <device name="16F767"   family="16F7X7" />
+  <device name="16F777"   family="16F7X7" />
+  <device name="16F785"   family="16F913" />
+  <device name="16F818"   family="16F81X" />
+  <device name="16F819"   family="16F81X" />
+  <device name="16F83"    family="16F8X" />
+  <device name="16F84"    family="16F8X" />
+  <device name="16F84A"   family="16F84A" />
+  <device name="16F87"    family="16F81X" />
+  <device name="16F870"   family="16F87X" />
+  <device name="16F871"   family="16F87X" />
+  <device name="16F872"   family="16F87X" />
+  <device name="16F873"   family="16F87X" />
+  <device name="16F873A"  family="16F87XA" />
+  <device name="16F874"   family="16F87X"  />
+  <device name="16F874A"  family="16F87XA" />
+  <device name="16F876"   family="16F87X"  />
+  <device name="16F876A"  family="16F87XA" />
+  <device name="16F877"   family="16F87X"  />
+  <device name="16F877A"  family="16F87XA" />
+  <device name="16F88"    family="16F81X" />
+  <device name="16F882"   family="16F88X" />
+  <device name="16F883"   family="16F88X" />
+  <device name="16F884"   family="16F88X" />
+  <device name="16F886"   family="16F88X" />
+  <device name="16F887"   family="16F88X" />
+  <device name="16F913"   family="16F913" />
+  <device name="16F914"   family="16F913" />
+  <device name="16F916"   family="16F916" />
+  <device name="16F917"   family="16F916" />
+  <device name="16F946"   family="16F916" />
+
+</type>

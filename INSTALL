@@ -1,0 +1,6 @@
+COMPILATION:
+ - "cmake ."
+ - "make"
+
+INSTALLATION:
+ - "make install" (as root)

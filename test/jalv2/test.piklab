@@ -1,0 +1,15 @@
+<!DOCTYPE piklab>
+<piklab>
+  <general>
+    <device>16F818</device>
+    <tool>jalv2</tool>
+    <programmer>gpsim</programmer>
+    <files>
+      <item>test.jal</item>
+    </files>
+    <opened_files>
+      <item>test.jal</item>
+    </opened_files>
+  </general>
+  <editors/>
+</piklab>

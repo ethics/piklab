@@ -1,0 +1,26 @@
+<!-- ************************************************************************* -->
+<!-- * Copyright (C) 2012 Nicolas Hadacek <hadacek@kde.org>                  * -->
+<!-- *                                                                       * -->
+<!-- * This program is free software; you can redistribute it and/or modify  * -->
+<!-- * it under the terms of the GNU General Public License as published by  * -->
+<!-- * the Free Software Foundation; either version 2 of the License, or     * -->
+<!-- * (at your option) any later version.                                   * -->
+<!-- *************************************************************************/-->
+<!DOCTYPE piklab>
+<prog_families>
+
+  <family name="18FXX2_XX8">
+    <waitTimes code="1000" lv_code="1000" eeprom="5000" config="5000" user_ids="5000" erase="10000" lv_erase="1000" />
+    <latches   code="8" eeprom="2" config="2" user_ids="8" row_erase="64" />
+    <voltages  vdd_min="2000" vdd_max="5500" vdd_def="5000" vpp_min="9000" vpp_max="13250" vpp_def="13000" vdd_nominal_min="4250" vdd_nominal_max="5500" erase_min="4500"/>
+    <memory    test_start="0x200000" test_size="0x40" panel_size="0x2000" boot_size="0x2000" />
+  </family>
+
+  <family name="18F2410">
+    <waitTimes code="1000" lv_code="1000" eeprom="4000" config="5000" user_ids="5000" erase="10000" lv_erase="1000" />
+    <latches   code="32" eeprom="2" config="2" user_ids="8" row_erase="64" />
+    <voltages  vdd_min="2000" vdd_max="5500" vdd_def="5000" vpp_min="9500" vpp_max="12500" vpp_def="12000" vdd_nominal_min="4250" vdd_nominal_max="5500" erase_min="3000"/>
+    <memory    test_start="0x200000" test_size="0x40" panel_size="0x0000" boot_size="0x2000" />
+  </family>
+
+</prog_families>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="text/x-piklab">
+    <comment>Piklab Project File</comment>
+    <comment xml:lang="fr">Fichier projet Piklab</comment>
+    <glob pattern="*.piklab"/>
+  </mime-type>
+</mime-info>

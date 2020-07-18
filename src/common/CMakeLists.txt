@@ -1,0 +1,12 @@
+add_subdirectory(common)
+add_subdirectory(global)
+add_subdirectory(port)
+add_subdirectory(cli)
+
+if(QT_ONLY)
+    add_subdirectory(nokde)
+#    add_subdirectory(nokde_gui)
+else(QT_ONLY)
+    add_subdirectory(kde_gui)
+    add_subdirectory(gui)
+endif(QT_ONLY)
