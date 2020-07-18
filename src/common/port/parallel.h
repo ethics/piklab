@@ -52,7 +52,7 @@ private:
   int     _fd;
   QString _device;
   struct RequestData {
-    int read, write;
+    unsigned long read, write;
   };
   static const RequestData REQUEST_DATA[Nb_RequestTypes];
   uchar _images[Nb_RequestTypes];
